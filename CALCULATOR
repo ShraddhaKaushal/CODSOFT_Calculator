@@ -1,0 +1,25 @@
+def add(A,B):
+    return A+B
+def subtract(A,B):
+    return A-B
+def multiply(A,B):
+    return A*B
+def divide(A,B):
+    return A/B
+def exponential(A,B):
+    return A**B
+choice=input("Enter choice(+,-,*,/,**)= ")
+A=float(input("Enter the first number= "))
+B=float(input("Enter the second number=: "))
+if choice=='+':
+    print(A,"+",B,"=",add(A,B))
+elif choice=='-':
+    print(B,"-",B,"=",subtract(A,B))
+elif choice=='*':
+    print(A,"*",B,"=",multiply(A,B))
+elif choice=='/':
+    print(A,"/",B,"=",divide(A,B))
+elif choice=='**':
+    print(A,"**",B,"=",exponential(A,B))
+else:
+    print("error 404")
